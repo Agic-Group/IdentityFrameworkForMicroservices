@@ -324,3 +324,13 @@ public class TokenController : ControllerBase
     }
 }
 ```
+
+### New Identity System
+
+```csharp
+using Microsoft.AspNetCore.Authentication.BearerToken;
+
+return Results.SignIn(claimsPrincipal);
+
+return Results.Unauthorized();
+```
